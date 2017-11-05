@@ -114,7 +114,7 @@ public class Specs {
 	public static var commands:Array = [
 		// block specification					type, cat, opcode			default args (optional)
 		// motion
-		["move %n steps",						" ", 1, "forward:",					10],
+	        ["move %n steps",						" ", 1, "forward:",					10],
 		["turn @turnRight %n degrees",			" ", 1, "turnRight:",				15],
 		["turn @turnLeft %n degrees",			" ", 1, "turnLeft:",				15],
 		["--"],
@@ -363,38 +363,38 @@ public class Specs {
 		["hide list %m.list",								" ", 12, "hideList:"],
 
 		// obsolete blocks from Scratch 1.4 that may be used in older projects
-		["play drum %n for %n beats",			" ", 98, "drum:duration:elapsed:from:", 1, 0.25], // Scratch 1.4 MIDI drum
-		["set instrument to %n",				" ", 98, "midiInstrument:", 1],
-		["loud?",								"b", 98, "isLoud"],
+		["play drum %n for %n beats",			" ", 10, "drum:duration:elapsed:from:", 1, 0.25], // Scratch 1.4 MIDI drum
+		["set instrument to %n",				" ", 10, "midiInstrument:", 1],
+		["loud?",								"b", 10, "isLoud"],
 
 		// obsolete blocks from Scratch 1.4 that are converted to new forms (so should never appear):
-		["abs %n",								"r", 98, "abs"],
-		["sqrt %n",								"r", 98, "sqrt"],
-		["stop script",							"f", 98, "doReturn"],
-		["stop all",							"f", 98, "stopAll"],
+		["abs %n",								"r", 10, "abs"],
+		["sqrt %n",								"r", 10, "sqrt"],
+		["stop script",							"f", 10, "doReturn"],
+		["stop all",							"f", 10, "stopAll"],
 		["switch to background %m.costume",		" ", 98, "showBackground:", "backdrop1"],
-		["next background",						" ", 98, "nextBackground"],
-		["forever if %b",						"cf",98, "doForeverIf"],
+		["next background",						" ", 10, "nextBackground"],
+		["forever if %b",						"cf",10, "doForeverIf"],
 
 		// testing and experimental control prims
-		["noop",								"r", 99, "COUNT"],
-		["counter",								"r", 99, "COUNT"],
-		["clear counter",						" ", 99, "CLR_COUNT"],
-		["incr counter",						" ", 99, "INCR_COUNT"],
+		["noop",								"r", 10, "COUNT"],
+		["counter",								"r", 10, "COUNT"],
+		["clear counter",						" ", 10 "CLR_COUNT"],
+		["incr counter",						" ", 10, "INCR_COUNT"],
 		["for each %m.varName in %s",			"c", 99, "doForLoop", "v", 10],
-		["while %b",							"c", 99, "doWhile"],
-		["all at once",							"c", 99, "warpSpeed"],
+		["while %b",							"c", 10, "doWhile"],
+		["all at once",							"c", 10, "warpSpeed"],
 
 		// stage motion (scrolling)
-		["scroll right %n",						" ", 99, "scrollRight",		10],
-		["scroll up %n",						" ", 99, "scrollUp",		10],
-		["align scene %m.scrollAlign",			" ", 99, "scrollAlign",		'bottom-left'],
-		["x scroll",							"r", 99, "xScroll"],
-		["y scroll",							"r", 99, "yScroll"],
+		["scroll right %n",						" ", 10, "scrollRight",		10],
+		["scroll up %n",						" ", 10, "scrollUp",		10],
+		["align scene %m.scrollAlign",			" ", 10, "scrollAlign",		'bottom-left'],
+		["x scroll",							"r", 10, "xScroll"],
+		["y scroll",							"r", 10, "yScroll"],
 
 		// other obsolete blocks from alpha/beta
-		["hide all sprites",					" ", 99, "hideAll"],
-		["user id",								"r", 99, "getUserId"],
+		["hide all sprites",					" ", 10, "hideAll"],
+		["user id",								"r", 10, "getUserId"],
 
 	];
 }}
